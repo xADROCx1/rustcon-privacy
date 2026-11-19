@@ -1,26 +1,34 @@
-# rustcon-privacy
-Privacy Policy
-Effective Date: January 1, 2025 | Developer: xADROCx | App: RustCON
-1. Introduction
-RustCON ("the App") is a Rust game server RCON management tool developed by xADROCx. This Privacy Policy explains what information we collect, how we use it, and your rights regarding that information. By using the App you agree to the practices described here.
-2. Information We Collect
-Information you provide: Server connection details (IP address, port) and optional admin display names for Admin Chat are stored locally on your device using localStorage. Passwords are stored locally only and never transmitted to our servers.
-Admin Chat messages: When you use the Admin Chat feature, messages you send are stored in Firebase Realtime Database associated with a per-server key. Messages are not linked to your real identity — only to an anonymous device UID generated at first use.
-Subscription data: On mobile platforms, subscription purchases are processed through Apple App Store or Google Play. We use RevenueCat to manage and verify subscription status. RevenueCat may collect anonymous purchase identifiers. We do not receive or store your payment information.
-Crash and diagnostic data: We may collect anonymous crash reports and usage diagnostics through platform-provided tools to improve stability. This data cannot be used to identify you.
-3. How We Use Your Information
-We use the information collected solely to provide and improve the App's features. We do not sell, rent, or share your personal information with third parties for marketing purposes. Server credentials are used only to establish your RCON connection and are never sent to our servers.
-4. Third-Party Services
-Firebase (Google): Admin Chat messages and presence data are stored in Firebase Realtime Database. Google's privacy policy applies to data processed by Firebase.
-Steam Web API: Player profile pictures are fetched from Steam's public XML API using Steam IDs provided by the game server. No personal data is sent to Steam beyond the publicly visible Steam ID.
-RevenueCat: Subscription verification on mobile is handled by RevenueCat. See their privacy policy at revenuecat.com for details.
-5. Data Storage and Security
-Server profiles, settings, and chat history are stored locally on your device using browser localStorage. This data remains on your device and is not accessible to us. Admin Chat messages stored in Firebase are retained until you clear them using the Clear button in the Admin Chat panel or until the server key is no longer active.
-6. Children's Privacy
-RustCON is intended for use by server administrators and is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.
-7. Your Rights
-You may delete all locally stored data by clearing the app's storage in your device settings. To request deletion of any Admin Chat messages stored in Firebase, use the Clear function in the Admin Chat panel. For other data requests, contact us at the address below.
-8. Changes to This Policy
-We may update this Privacy Policy from time to time. Continued use of the App after changes are posted constitutes your acceptance of the revised policy.
-9. Contact
-For questions about this Privacy Policy, contact the developer through the RustCON listing on the Google Play Store or Apple App Store.
+# RustCON Privacy Policy
+
+Updated November 18, 2026 · xADROCx / Shadow Kids Studios
+
+RustCON lets authorized administrators manage their Rust game servers. This policy describes the iOS app, including earlier iOS versions where noted.
+
+## Your servers and device data
+
+RustCON sends the RCON password directly to the server you configure to authenticate the connection. Commands, chat broadcasts and server replies travel between your device and that server. Standard WebRCON is unencrypted. Update 3 supports TLS when your RCON endpoint offers it. Server operators and hosting providers control what their servers log and retain.
+
+Update 3 saves server profiles and passwords in the iOS Keychain on the device. Earlier versions saved them in local app storage. Settings, recent Rust chat, imported map or kit images and cached artwork are stored on the device. The game chat archive can contain player display names, Steam IDs, timestamps and messages. Player map coordinates are positions inside the game world. RustCON does not request your GPS location.
+
+You can remove a saved server in RustCON, remove a RustMaps key in Map settings or delete the app to remove its local settings and chat archive. Any exported file is separate. Manage exported copies wherever you saved or shared them.
+
+## Purchases, avatars and map artwork
+
+- **Apple and RevenueCat.** Apple processes payments. RevenueCat processes purchase and subscription history, an app-generated customer ID and receipt information to verify access and support purchase restoration. RustCON does not collect payment card details. [Apple Privacy Policy](https://www.apple.com/legal/privacy/) · [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy/)
+- **Steam.** RustCON uses public Steam IDs from the server to look up public profile images. Earlier versions can use a third-party proxy for these public lookups. [Valve Privacy Policy](https://store.steampowered.com/privacy_agreement/)
+- **RustMaps.** If you add a RustMaps key, RustCON stores it in your Keychain and uses it to request map artwork from RustMaps using procedural map details such as seed and world size. These lookups do not include live player coordinates or your RCON password. [RustMaps](https://rustmaps.com/)
+- **Artwork and item catalog.** The app requests item data and images, and may load banner, kit or terrain images from hosts specified by a server. Those hosts receive the network request and can see ordinary request information such as your IP address. Only use artwork sources you trust.
+
+RustCON does not sell personal data or use it for targeted advertising. Apple may make crash reports available to the developer according to your device settings. If you email support, we use the information you provide to respond and resolve the issue.
+
+## Earlier versions and retained data
+
+Earlier iOS versions offered hosted Admin Chat. Firebase received a server-derived identifier, an installation ID and presence information during connections. It also stored messages, display names and timestamps when administrators used that feature. Update 3 no longer uses Firebase. Records from previous versions may remain until removed. Contact support if you need access to or deletion of those records. [Google Privacy Policy](https://policies.google.com/privacy)
+
+RevenueCat, Apple and other providers handle retention for the services they operate. We retain support correspondence as needed to respond, resolve disputes and meet legal obligations. To request access, correction or deletion of data we hold, or to ask about your privacy rights, email [support@shadowkidsstudios.com](mailto:support@shadowkidsstudios.com). Please leave passwords and API keys out of your request.
+
+RustCON is intended for server administrators and is not directed to children under 13. Policy changes are posted here with the update date.
+
+## Terms and support
+
+The iOS app is subject to [Apple’s Standard Licensed Application End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/). For billing, use [Apple subscription settings](https://apps.apple.com/account/subscriptions). For RustCON support or to report abuse, email [support@shadowkidsstudios.com](mailto:support@shadowkidsstudios.com).

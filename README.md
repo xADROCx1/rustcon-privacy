@@ -1,6 +1,6 @@
 # RustCON Privacy Policy
 
-Updated November 18, 2026 · xADROCx / Shadow Kids Studios
+Updated November 20, 2026 · xADROCx / Shadow Kids Studios
 
 RustCON lets authorized administrators manage their Rust game servers. This policy describes the iOS app, including earlier iOS versions where noted.
 
@@ -10,7 +10,11 @@ RustCON sends the RCON password directly to the server you configure to authenti
 
 Update 3 saves server profiles and passwords in the iOS Keychain on the device. Earlier versions saved them in local app storage. Settings, recent Rust chat, imported map or kit images and cached artwork are stored on the device. The game chat archive can contain player display names, Steam IDs, timestamps and messages. Player map coordinates are positions inside the game world. RustCON does not request your GPS location.
 
-You can remove a saved server in RustCON, remove a RustMaps key in Map settings or delete the app to remove its local settings and chat archive. Any exported file is separate. Manage exported copies wherever you saved or shared them.
+In versions with Player log, RustCON uses data from your configured server to show player logins and logouts, a count of logins observed by RustCON and session lengths when available. Entries can contain player display names, Steam IDs and event timestamps. Chat and player activity are stored on your device for use by authorized server administrators.
+
+In Chat, open **History** and choose **Delete history** to erase the selected server’s saved chat and player activity from this device and reset its local login counts. **Clear chat** temporarily hides the timeline. Use **Export log** to save a separate file that can contain the server address and the archive’s contents. You control where you save or share that file. Manage exported copies and records kept by your server separately.
+
+You can remove a saved server in RustCON, remove a RustMaps key in Map settings or delete the app to remove its local settings and chat archive.
 
 ## Purchases, avatars and map artwork
 

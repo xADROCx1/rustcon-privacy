@@ -1,6 +1,6 @@
 # RustCON Privacy Policy
 
-Updated November 20, 2026 · xADROCx / Shadow Kids Studios
+Updated November 24, 2026 · xADROCx / Shadow Kids Studios
 
 RustCON lets authorized administrators manage their Rust game servers. This policy describes the iOS app, including earlier iOS versions where noted.
 
@@ -8,7 +8,7 @@ RustCON lets authorized administrators manage their Rust game servers. This poli
 
 RustCON sends the RCON password directly to the server you configure to authenticate the connection. Commands, chat broadcasts and server replies travel between your device and that server. Standard WebRCON is unencrypted. Update 3 supports TLS when your RCON endpoint offers it. Server operators and hosting providers control what their servers log and retain.
 
-Update 3 saves server profiles and passwords in the iOS Keychain on the device. Earlier versions saved them in local app storage. Settings, recent Rust chat, imported kit images and cached artwork are stored on the device. The game chat archive can contain player display names, Steam IDs, timestamps and messages. RustCON does not request your GPS location.
+Update 3 saves server profiles and passwords in the iOS Keychain on the device. Earlier versions saved them in local app storage. Settings, recent Rust chat, imported map or kit images and cached artwork are stored on the device. The game chat archive can contain player display names, Steam IDs, timestamps and messages. Player map coordinates are positions inside the game world received from your authenticated server connection. RustCON does not request your GPS location.
 
 In versions with Player log, RustCON uses data from your configured server to show player logins and logouts, a count of logins observed by RustCON and session lengths when available. Entries can contain player display names, Steam IDs and event timestamps. Chat and player activity are stored on your device for use by authorized server administrators.
 
@@ -16,11 +16,12 @@ In Chat, open **History** and choose **Delete history** to erase the selected se
 
 You can remove a saved server in RustCON or delete the app to remove its local settings and chat archive.
 
-## Purchases, avatars and artwork
+## Purchases, avatars and map artwork
 
 - **Apple and RevenueCat.** Apple processes payments. RevenueCat processes purchase and subscription history, an app-generated customer ID and receipt information to verify access and support purchase restoration. RustCON does not collect payment card details. [Apple Privacy Policy](https://www.apple.com/legal/privacy/) · [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy/)
 - **Steam.** RustCON uses public Steam IDs from the server to look up public profile images. Earlier versions can use a third-party proxy for these public lookups. [Valve Privacy Policy](https://store.steampowered.com/privacy_agreement/)
-- **Artwork and item catalog.** Update 3 requests item catalog data and draws the category icons locally. Earlier versions may request item images. The app may load banner or kit images from hosts specified by a server. Those hosts receive the network request and can see ordinary request information such as your IP address. Only use artwork sources you trust.
+- **Server map terrain.** In map-enabled versions, RustCON can query your configured server for its published terrain-image URL and download that image over HTTPS from Facepunch. Facepunch receives ordinary network request information such as your IP address. Player coordinates and RCON passwords are not included in that image request. You may also import a map image on your device.
+- **Artwork and item catalog.** Update 3 requests item catalog data and draws the category icons locally. Earlier versions may request item images. The app may load banner, kit or terrain images from hosts specified by a server. Those hosts receive the network request and can see ordinary request information such as your IP address. Only use artwork sources you trust.
 
 RustCON does not sell personal data or use it for targeted advertising. Apple may make crash reports available to the developer according to your device settings. If you email support, we use the information you provide to respond and resolve the issue.
 
